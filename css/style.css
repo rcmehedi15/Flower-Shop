@@ -1,72 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans&family=Work+Sans:wght@400;700&display=swap');
 
 body {
-    color: #272727;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  color: #272727;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Banner section done  */
 .bg-color {
-    background: rgba(229, 84, 115, 0.10);
-    height: 580px;
+  background: rgba(229, 84, 115, 0.10);
+  height: 725px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .left-side {
-    flex: 1;
-    padding: 20px;
-
+  flex: 1;
+  padding: 20px;
 }
 
 .left-side h2 {
-    color: #272727;
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0;
+  color: #272727;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .left-side p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: rgba(39, 39, 39, 0.60);
-
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(39, 39, 39, 0.60);
 }
 
 .left-side button {
-    padding: 10px 20px;
-    align-items: flex-start;
-    border-radius: 8px;
-    background: #E55473;
-    color: #FFF;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border: none;
+  padding: 10px 20px;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: #E55473;
+  color: #FFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
 }
 
 .right-side {
-    padding: 20px;
-    text-align: center;
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
 .right-side img {
-    max-width: 70%;
-    height: auto;
-   
-   
-    
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Banner Media Queries */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .left-side h2 {
+    font-size: 40px;
+  }
+
+  .left-side p {
+    font-size: 12px;
+  }
+
+  .right-side img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-side h2 {
+    font-size: 32px;
+  }
+
+  .left-side p {
+    font-size: 10px;
+  }
+
+  .right-side img {
+    max-width: 100%;
+  }
 }
