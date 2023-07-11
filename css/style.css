@@ -171,7 +171,6 @@ body {
     height: 480px;
     border-radius: 300px 300px 0px 0px;
     background: rgba(71, 125, 17, 0.15);
-
     text-align: center;
 
 }
@@ -196,4 +195,19 @@ body {
     width: 70%;
     height: auto;
     margin-top: 110px;
+}
+
+.margin-toDelivery{
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 50px;
 }
