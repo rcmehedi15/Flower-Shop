@@ -214,6 +214,7 @@ body {
     margin-top: 80px;
     padding: 50px;
 }
+
 @media (max-width: 768px) {
     .margin-toDelivery {
         flex-direction: column;
@@ -221,6 +222,7 @@ body {
         padding: 0px;
     }
 }
+
 /* deal sales  */
 
 .bg-color-deal {
@@ -279,4 +281,189 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+/* InstagramContainer  */
+
+.InstagramContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.InstagramContainer img {
+    max-width: 20%;
+
+}
+
+ /* latest deals  */
+.getDeals {
+    margin-top: 40px;
+    background-image: url('../imges/Rectangle 9.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SubscribeContainer {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+
+
+}
+
+.GetTitle {
+    color: #272727;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+
+}
+
+.couponSubTitle {
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 15px 0px;
+}
+
+.input-box {
+    width: 600px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    padding: 15px;
+}
+
+.inputSubscribe {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-btn {
+    width: 50px;
+    height: 64px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 8px;
+    background: #E55473;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background-color: #45a049;
+}
+/* Media queries for mobile responsiveness */
+
+@media only screen and (max-width: 600px) {
+    .SubscribeContainer {
+        max-width: 100%;
+        margin: 50px 20px;
+        padding: 10px;
+    }
+    
+    .input-box {
+        width: 100%;
+    }
+    
+    .subscribe-btn {
+        width: 100%;
+    }
+}
+
+/* footer  */
+
+.bg-colorFooter {
+    margin-top: 20px;
+    background: #111010;
+    height: 280px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerShop {
+    text-align: center;
+}
+.titleShop{
+    color: #E55473;
+}
+.shopColor{
+    color: #ffffff;
+}
+.distractedSubhead  {
+    color: #ffffffe6;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.copyRight{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .bg-colorFooter {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .distractedSubhead {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    .titleShop {
+        font-size: 24px;
+    }
+
+    .distractedSubhead {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .copyRight {
+        font-size: 14px;
+    }
 }
